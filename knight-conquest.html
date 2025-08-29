@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight's Conquest</title>
+    <link rel="stylesheet" href="knight-conquest-style.css">
+    <script src="knight-conquest-levels-script.js" defer></script>
+    <script src="knight-conquest-script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="main-menu">
+            <img src="images/main-menu-icon-white.png" alt="back to main menu" class="main-menu-btn">
+        </a>
+    </div>
+
+    <div id="chessboard-container">
+        <div id="chessboard"></div>
+    </div>
+
+    <div id="popup-level-complete" class="popup hidden">
+        <p>Level Complete!</p>
+        <button class="quit-btn">Quit</button>
+        <button id="next-level-btn">Next Level</button>
+    </div>
+
+    <div id="popup-level-lost" class="popup hidden">
+        <p>Level Lost</p>
+        <button class="quit-btn">Quit</button>
+        <button id="retry-btn">Retry</button>
+    </div>
+
+    <div id="popup-game-complete" class="popup hidden">
+        <p>Congratulations, you've completed all levels!</p>
+        <button class="quit-btn">Quit</button>
+    </div>
+</body>
+</html>
