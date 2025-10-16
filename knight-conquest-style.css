@@ -1,10 +1,12 @@
 body {
-    background-image: url(images/website-bg-image.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0 50px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.45)),
+    url(images/website-bg-image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 20px 20px;
 }
 
 html {
