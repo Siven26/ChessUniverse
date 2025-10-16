@@ -1,38 +1,48 @@
 body {
-    background-image: url(images/website-bg-image.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0 50px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.45)),
+    url(images/website-bg-image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 20px 20px;
 }
+
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
+    position: relative;
+    z-index: 1;
 }
 
 .logo {
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
 }
 
 .play-btn {
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 5px;
-    background-color: darkgrey;
+    padding: 10px;
+    background-color: goldenrod;
     color: white;
-    border: 3px solid white;
-    border-radius: 25px;
-    margin-top: 100px;
+    border-radius: 15px;
+    margin-top: 380px;
     text-decoration: none;
     cursor: pointer;
 }
 
 .play-btn:hover {
-    background-color: silver;
+    background-color: darkgoldenrod;
+}
+
+#webgl-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
 }
